@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&display=swap');
+
+
+html{
+    font-family: "Roboto", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary:#000;
+    --secondary:rgb(24 24 27 );
+    --border:rgba(63,63,70,0.4);
+    --title:rgba(244, 244, 245, 0.783);
+    --subtitle:rgba(255, 255, 255, 0.767) ;
+    --bgheader:rgb(39,39,42);
+    --blue:rgb(93,188,252);
+}
+.light{
+--primary:rgb(250,250,250);
+--secondary:rgb(250, 250, 255);
+--title:#000;
+border: rgba(202,202,202,0.518);
+--subtitle: #000;
+--bgheader:rgb(253,253,253);
+--blue:rgb(0,149, 246)
+
+
+    
+}
+
+
+.container{
+    border: 2px solid var(--border);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto  ;
+    background-color: var(--secondary);
+    box-shadow:  2px 2px 100px rgba(128, 124, 124,0.8);
+    
+}
+
+
+body{
+
+    background-color: var(--primary);
+    color: white    ;
+}
+.divider{
+    border-bottom: 2px solid var(--border);
+    margin: 1.2rem 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:initial; 
+    transition: 0.2s;
+}
+.flex{
+    display: flex;
+  align-items: center;
+}
+.border{
+
+border: 2px solid red;
+}
+button{all:unset}
+button:hover{cursor: pointer;}
+button:active{scale:0.9}
+button:disabled{
+opacity: 0.3;
+cursor: not-allowed;
+
+}
+a{
+    width: 100%;
+    justify-content: flex-end;
+   
+}
+.icon-arrow-thin-up{
+    color: #fff;
+    position: fixed;
+    bottom:3px;
+    right: 4%;
+    background-color: rgba(3, 152, 245, 0.687);
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.6 s;
+   ;
+    
+}
+/*scrollbar*/
+
+::-webkit-scrollbar{
+    width: 0.6rem;
+}
+::-webkit-scrollbar-track{
+    border: 1px color red;
+    box-shadow: inset 0 0 2.5px 2px rgb(0,0,0,0.5);
+    border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb{
+background: var(--bgheader);
+border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--blue)
+}

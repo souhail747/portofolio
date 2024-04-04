@@ -1,0 +1,159 @@
+ul.flex{
+
+gap: 17px;
+ }
+
+ header.flex{
+   justify-content: space-between;
+   padding: 0 2.4rem;
+   margin-top: 2rem;
+}
+header.flex nav{
+   background-color:var(--bgheader);
+   padding: 0.57rem  1.6rem;
+   border-radius: 55px;
+   box-shadow: 1px 1px 33px  rgba(146, 141, 141,0.2);
+} 
+header ul li a{
+   
+   
+   color: var(--title);
+   opacity: 0.8;
+   font-size:0.6rem
+;
+font-weight: 500;
+ }
+ header ul li a:hover  {
+    
+    color: var(--blue);
+   opacity: 1;
+   font-size:0.72rem;
+   font-weight: 500;
+}
+header button.menu{
+   display: none;
+}
+
+header button{
+   font-size:  2rem;
+}
+
+/*Model  */
+header .fixed{
+
+   position: fixed;
+ inset: 0;
+ background-color:var(--bgheader);
+ z-index: 11;
+ backdrop-filter: blur(4px);
+}
+/* Icon button */
+
+header .icon-menu,header .mode{
+background-color:var(--bgheader);
+height: 1.9rem;
+width: 1.9rem;
+justify-content: center;
+align-items: center;
+text-align: center;
+border-radius: 50%;
+cursor: pointer;
+color: var(--subtitle);
+border: 1px solid salmon;
+transition: 0.5s;
+box-shadow: 1px 1px 21px rgb(255, 225, 0);
+}
+.icon-brightness-contrast{
+   color: orange;
+   transition: 0.9s;
+   font-size: 17px;
+   box-shadow: 17px 17px 70px rgb(22, 17, 17);
+}
+header .mode:hover{
+   box-shadow:4px 4px  75px rgb(247, 228, 78);
+}
+.icon-brightness-contrast:hover{
+   box-shadow:4px 4px  75px rgb(0, 0, 0);
+}
+header .icon-moon-o,header .icon-menu{
+   font-size: 1rem;
+}
+header .icon-menu:hover,header .mode:hover{
+   border-color: red;
+color: var(--title);}
+
+header .icon-close{
+   font-size: 1.3rem;
+   color: var(--subtitle);
+   transition: 0.3s;
+ 
+}header .icon-close:hover{
+   font-size: 2rem;
+   color:crimson;
+   rotate:180deg;
+}
+
+
+header .modal{
+   animation: mymove 0.7s 1;
+   display: flex;
+   flex-direction: column; 
+   background-color: var(--bgheader);
+   margin: 30px;
+   padding: 20px;
+   width: 50%;
+   
+   border-radius:12px ;
+}
+
+header .fixed ul.modal li{
+   
+   border-bottom: 1px solid var(--border);
+   padding-bottom: 0.5rem;
+   padding-top: 0.5rem;
+   
+}
+header .fixed ul.modal li:last-child{
+   border :none   
+}
+
+header .fixed ul.modal li:first-child{
+   border :none  ;
+   text-align: right;
+   padding-bottom: 0;
+   padding-top: 0;
+}
+header .fixed ul.modal li a {
+   font-size: 1rem;
+
+}
+header .fixed ul.modal li:hover{
+   background-color:none;
+
+}
+.rot li:hover{font-size: 1rem;
+}
+
+@keyframes mymove {
+   0% {scale: 0;}
+   50% {scale:1.2;}
+   100%{scale: 1;}
+}
+/* @keyframes blob {
+   0%{ transform: translate(-100%, -100%) translate3d(0,0,0);}
+   25%{ transform: translate(-100%, -100%) translate3d(100%,0,0);}
+   50%{ transform: translate(-100%, -100%) translate3d(100%,100%,0);}
+   75%{ transform: translate(-100%, -100%) translate3d(0,100%,0);}
+   100%{ transform: translate(-100%, -100%) translate3d(0,0,0);}
+   
+} */
+@media (max-width: 500px)
+{header.flex nav{
+   display: none;}
+   header button.menu{
+      display: block;
+   }
+   
+   
+   
+}

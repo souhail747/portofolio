@@ -1,0 +1,142 @@
+.left {
+    display: flex;
+    flex-direction: column;
+padding: 0;
+gap:0.3rem;
+width: 24%;
+align-items: flex-end;
+margin-left: 10px;
+}
+
+.left  button{
+    display: flex;
+    font-size: 10px;
+    width: 90px;
+    height:35px;
+    border: 1.4px solid var(--border);
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: 0.21s;
+    color:#fff;
+    background-color: #000;
+}
+ .left  button:hover{
+    scale:1.1;
+    border-color: rgb(255, 174, 0);
+    color: #fff;
+
+
+}
+
+.left button.active{
+    background-color:#a9a4a467 
+    ; opacity: 0.7;
+        border-color: aqua;
+    color:#fff
+}   
+/*Right section */
+main.flex{
+ 
+align-items: flex-start;
+
+}
+.right{
+    flex-wrap: wrap;
+    column-gap: 0.4rem;
+    row-gap: 0.5rem;
+    justify-content: center;
+    width: 100%;
+}
+
+/*hover trryyy*/
+
+
+article.card{
+    
+    gap:0.7rem;
+    flex-direction: column;
+    background-color:var(--primary);
+    transition: 0.4s;
+    border: 1px solid white;
+    border-radius:5px ;
+    z-index: 1;
+}
+
+/*hover trryyy*/
+article.card img{
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+article.card:hover{
+    border: 1px solid rgb(0, 140, 255);
+    scale: 1.1;
+    rotate: 0.4deg;
+}
+
+
+.parag{
+    color: var(--subtitle);
+    font-size: 7px;
+    letter-spacing: 0.3px;
+padding: 0;
+margin: 0;
+}
+article .footer{
+    display: flex;
+    width: 100%;
+    
+   justify-content: space-between;
+}
+.footer .icons{
+    margin-left: 10px;
+}
+.footer .more{
+    margin-right: 10px;
+}
+article .footer .icons{
+   display: flex;
+   justify-content: space-between;
+   width:19.9%;
+   font-size: 12px;
+}
+article .footer .more{
+ display: flex;
+ justify-content: flex-end;
+ gap:7px;
+ width: 55%;
+ color: aqua;
+ font-size: 12px;
+ }
+.more button.i{
+
+ 
+    align-self: end;
+}
+
+@media (max-width:600px) {
+    main.flex{
+        gap:19px;
+        flex-direction: column;
+        align-items: center;
+    }
+    main .left {
+       flex-direction: row  ;
+       flex-wrap: wrap;
+       gap: 10px;
+      width: 90%;
+       
+    }
+    
+}
+
+.animateMotion{
+   
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    
+}

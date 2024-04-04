@@ -1,0 +1,89 @@
+.hero{
+    padding-top: 50px;
+}
+.parag,.pargraphe{
+    display:  flex;
+    flex-direction: column;
+gap:10px;
+    margin:20px 40px  ;
+    
+}
+.imgsection img{
+width: 50px;
+height: 50px;
+padding: 0;
+margin: 0;
+ 
+border-radius: 50%;
+border: 1px solid orange;
+
+}
+.imgsection:hover .icon-verified{
+    transform: scale(1.5);
+    margin-left: 25px;
+  }
+  .imgsection:hover img{
+    transform: scale(1.5);
+    border-color: red;
+  }
+
+
+.hero .icons button:hover{
+  
+color: #9797A0;
+box-shadow: 1px 1px 12px rgba(225, 221, 221, 0.21);
+}
+.imgsection{
+    margin:0px 40px  ;
+    display: flex;
+    width: 80px;
+    align-items: flex-end;
+    
+}
+.imgsection span{
+    
+    margin-bottom: 05px;
+}
+.parag .pargraphe  h1{
+    color:var(--title)
+}
+.parag .pargraphe  p{
+    color:var(--title);
+    font-size: 10px;
+    line-height: 1.8;
+    letter-spacing: 0.01rem;
+}
+/*icons*/
+.hero .icons{
+    display: flex;
+    flex-direction:row;
+    gap:12px;
+    font-size: 18px;
+}
+@keyframes iconAnimation {
+    0% {scale: 0;}
+    50% {scale:1.2;}
+    100%{scale: 1;}
+ }
+.pargraphe p{
+    margin:0;
+    padding: 0;
+}*
+
+.parag p,.parag h1{
+   
+    text-transform: uppercase
+}
+@media (max-width:600px) {
+    .hero{
+        flex-direction: column;
+    }
+    .img{
+        width: 220px;
+        height: 220px;
+        display: none;
+    }
+}
+    .animation{
+       translate: 20px -20px;
+    }
